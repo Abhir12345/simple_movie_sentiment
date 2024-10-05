@@ -2,7 +2,7 @@ import streamlit as st
 import numpy as np
 import tensorflow as tf
 from tensorflow.keras.datasets import imdb
-from tensorflow.keras.preprocessing import sequences
+from tensorflow.keras.preprocessing import sequence
 
 model = tensorflow.keras.models.load_model('simple_rnn.h5')
 st.title("Moview Sentiment Prediction.")
