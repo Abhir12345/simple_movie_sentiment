@@ -4,8 +4,8 @@ import tensorflow as tf
 from tensorflow.keras.datasets import imdb
 from tensorflow.keras.preprocessing import sequence
 
-model = tensorflow.keras.models.load_model('simple_rnn.h5')
-st.title("Moview Sentiment Prediction.")
+model = tf.keras.models.load_model('simple_rnn.h5')
+st.title("Movie Sentiment Prediction.")
 
 review = st.text_input("Enter the string.", 500)
 word_index = imdb.get_word_index()
